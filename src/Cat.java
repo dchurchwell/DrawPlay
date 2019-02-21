@@ -42,11 +42,16 @@ public class Cat {
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
-		
+		//tongue
 		y += MOUTH_HEIGHT/2;
 		x += MOUTH_HEIGHT/2;
 		g2.setColor(Color.red);
 		g2.fillOval(x, y, MOUTH_WIDTH/4, MOUTH_HEIGHT/2);
+		//nose
+		y -= MOUTH_HEIGHT;
+		
+		g2.setColor(Color.black);
+		g2.fillOval(x, y, MOUTH_HEIGHT/2, MOUTH_WIDTH/4);
 		
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
